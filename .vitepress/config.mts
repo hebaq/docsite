@@ -1,29 +1,30 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
+import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "禾白知识库",
   description: "零碎知识收集整理",
-  // base: '/docsite',
+  vite: {
+    plugins: [
+      // add plugin
+      AutoSidebar({
+        // You can also set options to adjust sidebar data
+        // see option document below
+        path: '/'
+      })
+    ]
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+      { text: "Home", link: "/" },
+      { text: "前端", link: "/frontend/vite/vite" },
+      { text: "后端 ", link: "/backend/" },
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+      { icon: "github", link: "https://github.com/hebaq/docsite" },
+    ],
+  },
+});

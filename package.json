@@ -5,6 +5,10 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
+    "@types/node": "^20.9.0",
     "vitepress": "^1.0.0-rc.25"
+  },
+  "dependencies": {
+    "vite-plugin-vitepress-auto-sidebar": "^1.6.1"
   }
 }

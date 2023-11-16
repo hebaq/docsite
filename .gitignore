@@ -1,2 +1,5 @@
 node_modules
 .vitepress/dist
+.vitepress/cache
+.vitepress/config.mts.*.mjs
+package-lock.json
