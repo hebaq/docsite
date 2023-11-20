@@ -21,6 +21,7 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "前端", link: "/frontend/vite/vite" },
       { text: "后端 ", link: "/backend/" },
+      { text: "其他 ", link: "/other/" },
     ],
 
     socialLinks: [
