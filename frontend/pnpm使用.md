@@ -10,7 +10,7 @@ pnpm config set cache-dir "D:\pnpm\cache" # pnpm全局缓存路径
 ```
 
 配置环境变量
-添加`PNPM_HOME`,值为`D:\pnpm\globalDir`
+编辑`Path`,添加值为`D:\pnpm\globalDir`
 
 查看全局安装包
 `pnpm ls -g`
